@@ -1,35 +1,50 @@
 package Class;
 
+import Class.Auteur;
 
 public class Livre {
 
-    public String titre;
-    public String auteur;
-    public int annee_publication;
-    public String ISBN;
+    private String titre;
+    private Auteur auteur;
+    private int anneePublication;
+    private String ISBN;
 
-
-    public Livre(String _titre, String _auteur, int _annee_publication, String _ISBN) {
-
-        this.titre = _titre;
-        this.auteur = _auteur;
-        this.annee_publication = _annee_publication;
-        this.ISBN = _ISBN;
-
+    public Livre(String titre, Auteur auteur, int anneePublication, String ISBN) {
+        this.titre = titre;
+        this.auteur = auteur;
+        this.anneePublication = anneePublication;
+        this.ISBN = ISBN;
     }
 
-    public void setTitre(String _titre) {
-        this.titre = _titre;
+    public String getTitre() {
+        return titre;
     }
 
-    public void setAuteur(String _auteur) {
-        this.auteur = _auteur;
+    public void setTitre(String titre) {
+        this.titre = titre;
     }
 
-    public void setAnnePublication(int _annee_publication){
-        this.annee_publication = _annee_publication;
+    public Auteur getAuteur() {
+        return auteur;
     }
-    
+
+    public void setAuteur(Auteur auteur) {
+        this.auteur = auteur;
+    }
+
+    public int getAnneePublication() {
+        return anneePublication;
+    }
+
+    public void setAnneePublication(int anneePublication) {
+        this.anneePublication = anneePublication;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
 }
-
-
